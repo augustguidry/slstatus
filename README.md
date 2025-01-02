@@ -1,13 +1,13 @@
-slstatus - suckless status
-==========================
+# slstatus - suckless status
+
 slstatus is a small tool for providing system status information to other
 programs over the EWMH property of the root window (used by dwm(1)) or
 standard input/output. It is designed to be as efficient as possible by
 only issuing the minimum of system calls required.
 
 
-Features
---------
+## Features
+
 - Battery percentage/state/time left
 - Cat (read file)
 - CPU usage
@@ -33,8 +33,8 @@ Features
 - WiFi signal percentage and ESSID
 
 
-Requirements
-------------
+## Requirements
+
 Currently slstatus works on FreeBSD, Linux and OpenBSD.
 In order to build slstatus you need the Xlib header files.
 
@@ -43,23 +43,23 @@ In order to build slstatus you need the Xlib header files.
 - For volume percentage on FreeBSD, `sndio` must be installed.
 
 
-Installation
-------------
+## Installation
+
 Edit config.mk to match your local setup (slstatus is installed into the
 /usr/local namespace by default).
 
 Afterwards enter the following command to build and install slstatus (if
 necessary as root):
 
-    make clean install
+```sh
+  make clean install
+```
 
+## Running slstatus
 
-Running slstatus
-----------------
 See the man page for details.
 
+## Configuration
 
-Configuration
--------------
 slstatus can be customized by creating a custom config.h and (re)compiling the
 source code. This keeps it fast, secure and simple.
