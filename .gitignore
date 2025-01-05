@@ -1,2 +1,6 @@
+*.diff
 *.o
+*.orig
+*.rej
+config.h
 slstatus
